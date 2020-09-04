@@ -1,0 +1,45 @@
+{
+  "name": "myportfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint ./ --ignore-path .gitignore",
+    "lint:fix": "npm run lint -- --fix",
+    "format": "prettier --write \"{,!(node_modules)/**/}*.js\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "prettier": "@imaginary-cloud/prettier-config",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.5",
+    "prettier": "^2.0.5"
+  }
+}
