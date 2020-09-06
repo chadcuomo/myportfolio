@@ -18,7 +18,7 @@ class Portfolio extends React.Component {
     render() {
         return (
         <section className="portfolio-container">
-            <div className="portfolio-content-container">
+            <div className="content-container">
                 <div className="portfolio-title-container">
                     <LargeTitle titleText="Portfolio" />
                 </div>

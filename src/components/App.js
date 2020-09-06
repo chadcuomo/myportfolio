@@ -3,6 +3,7 @@ import Header from './Header'
 import Nav from './Nav'
 import About from './About'
 import Portfolio from './Portfolio'
+import Skills from './Skills'
 
 class App extends React.Component {
   render() {
@@ -12,6 +13,7 @@ class App extends React.Component {
         <Nav />
         <About />
         <Portfolio />
+        <Skills />
       </div>
     )
   }
