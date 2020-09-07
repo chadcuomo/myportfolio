@@ -4,6 +4,7 @@ import Nav from './Nav'
 import About from './About'
 import Portfolio from './Portfolio'
 import Skills from './Skills'
+import Contact from './Contact'
 
 class App extends React.Component {
   render() {
@@ -14,6 +15,7 @@ class App extends React.Component {
         <About />
         <Portfolio />
         <Skills />
+        <Contact />
       </div>
     )
   }

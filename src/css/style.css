@@ -343,13 +343,8 @@ a:active {
     padding-bottom: 40px;
 }
 
-.content-container {
-    border: springgreen 1px solid;
-}
-
 .skills-title-container {
     margin-left: auto;
-    border: steelblue solid 1px;
 }
 
 .skills-title-container h2{
@@ -361,19 +356,17 @@ a:active {
 
 .skills-inner-content-container {
     width: 100%;
-    border: steelblue 1px solid;
     margin-top: 60px;
-}
-
-.individual-skill-container {
-    width: 50%;
-    border: teal solid 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /*Single Skill*/
 .single-skill-container {
     color: var(--grey);
     padding-bottom: 10px;
+    width: 47%;
 }
 
 .single-skill-text {
@@ -402,4 +395,48 @@ hr {
 .single-skill-image {
     width: 28px;
 }
+
+/*Contact*/
+
+.contact-container {
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.content-container {
+    border: 1px springgreen solid;
+}
+
+.contact-content-container {
+    display: flex;
+    width: 100%;
+}
+
+.contact-left-header-container h1{
+    color: var(--white);
+    font-size: 60px;
+    line-height: 49px;
+    border: steelblue 1px solid;
+}
+
+.pink {
+    color: var(--pink);
+}
+
+.contact-right-container {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.contact-right-container h2 {
+    transform: rotate(-90deg);
+    color: var(--white);   
+    margin-inline: -150px;
+}
+
 
