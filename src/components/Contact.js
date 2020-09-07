@@ -1,5 +1,6 @@
 import React from 'react'
 import LargeTitle from './LargeTitle'
+import Form from './Form'
 
 class Contact extends React.Component {
 
@@ -16,6 +17,9 @@ class Contact extends React.Component {
                         <br />
                         together<span className="pink">?</span>
                         </h1>
+                    </div>
+                    <div className="contact-left-form-container">
+                      <Form />
                     </div>
                 </div>
                 <div className="contact-right-container">
