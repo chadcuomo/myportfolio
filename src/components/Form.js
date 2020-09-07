@@ -16,13 +16,21 @@ export default function Form() {
     }
 
     return(
-        <div>
-            <form onSubmit={sendEmail}>
-                <input type="text" placeholder="Name" name="name" />
-                <input type="email" placeholder="E-mail" name="email" />
-                <input type="text" placeholder="Subject" name="subject" />
-                <textarea cols="30" rows="9" placeholder="Message" name="message" />
-                <input type="submit" className="main-button" value="Send Message"></input>
+        <div className="form-container">
+            <form className="form" onSubmit={sendEmail}>
+                <div className="form-top-container">
+                    <input type="text" placeholder="Name" name="name" className="form-name" />
+                    <input type="email" placeholder="E-mail" name="email" className="form-email" />
+                </div>
+                <div className="form-subject-container">
+                    <input type="text" placeholder="Subject" name="subject" className="form-subject" />
+                </div>
+                <div className="form-text-container">
+                    <textarea rows="10" placeholder="Message" name="message" className="form-text" />
+                </div>
+                <div className="form-button-container">
+                    <input type="submit" className="main-button form-button" value="Send Message" />
+                </div>
             </form>
         </div>
 

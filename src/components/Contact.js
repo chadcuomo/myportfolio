@@ -28,7 +28,13 @@ class Contact extends React.Component {
                     </div>
                 </div>
             </div>
-            <div className="contact-bottom-container"></div>
+            <div className="contact-bottom-container">
+              <div className="social-button-container">
+                <button className="github-button" />
+                <button className="twitter-button" />
+                <button className="linkedin-button" />
+              </div>
+            </div>
           </div>
       </section>
     )

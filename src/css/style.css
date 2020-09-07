@@ -403,24 +403,23 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 30px;
 }
 
-.content-container {
-    border: 1px springgreen solid;
-}
+
 
 .contact-content-container {
     display: flex;
     width: 100%;
 }
 
+
+
 .contact-left-header-container h1{
     color: var(--white);
     font-size: 60px;
     line-height: 49px;
-    border: steelblue 1px solid;
 }
 
 .pink {
@@ -437,6 +436,144 @@ hr {
     transform: rotate(-90deg);
     color: var(--white);   
     margin-inline: -150px;
+}
+
+.contact-bottom-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.github-button {
+    width: 30px;
+    height: 30px;
+    margin: 12px;
+    background-image: url("/images/gitsocial.png");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-color: #0000;
+    transition: .75s ease;
+}
+
+.github-button:hover {
+    background-image: url("/images/gitsocial-hover.png");
+}
+
+.twitter-button {
+    width: 30px;
+    height: 30px;
+    margin: 12px;
+    background-image: url("/images/twitter.png");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-color: #0000;
+    transition: .75s ease;
+}
+
+.twitter-button:hover {
+    background-image: url("/images/twitter-hover.png");
+}
+
+.linkedin-button {
+    width: 30px;
+    height: 30px;
+    margin: 12px;
+    background-image: url("/images/linkedin.png");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-color: #0000;
+    transition: .75s ease;
+}
+
+.linkedin-button:hover {
+    background-image: url("/images/linkedin-hover.png");
+}
+
+/*Form*/
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+::placeholder {
+    color: rgb(184, 184, 184);
+    font-size: 14px;
+}
+
+.form-top-container {
+    margin-bottom: 10px;
+}
+
+.form-name {
+    width: 300px;
+    margin-right: 8px;
+    background-color: #494949;
+    color: var(--white);
+    padding: 10px;
+    font-family: var(--pfont);
+    font-size: 14px;
+    border: none;
+}
+
+.form-email {
+    width: 300px;
+    background-color: #494949;
+    color: var(--white);
+    padding: 10px;
+    font-family: var(--pfont);
+    font-size: 14px;
+    border: none;
+}
+
+.form-subject-container {
+    width: 100%;
+}
+
+.form-subject {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #494949;
+    color: var(--white);
+    padding: 10px;
+    font-family: var(--pfont);
+    font-size: 14px;
+    border: none;
+}
+
+.form-text-container {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.form-text {
+    width: 100%;
+    background-color: #494949;
+    color: var(--white);
+    padding: 10px;
+    font-family: var(--pfont);
+    font-size: 14px;
+    border: none;
+}
+
+.form-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-button {
+    border: none;
+    font-family: var(--pfont);
 }
 
 
