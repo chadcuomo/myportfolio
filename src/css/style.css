@@ -15,10 +15,7 @@ body, html{
     padding: 0;
   }
 
-body {
-    width: 100vw;
-}
-  
+
 * {
     box-sizing: border-box;
 }
@@ -190,6 +187,16 @@ button {
     margin-bottom: -2px;
 }
 
+.nav-link-container ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-link-container li {
+    list-style: none;
+}
+
 a:link {
     text-decoration: none;
     color: var(--white);
@@ -211,6 +218,55 @@ a:hover {
 a:active {
     text-decoration: none;
     color: var(--white);
+}
+
+.toggle-button {
+   display: none;
+   position: absolute;
+   background-image: url("/images/togglebutton.png");
+   width: 40px;
+   height: 35px; 
+   background-color: #0000;
+   right: 10px;
+}
+
+@media screen and (max-width: 486px) {
+   .toggle-button {
+       margin-top: 5px;
+       display: block;
+   }
+
+   .nav-link-container {
+       display: none;
+       opacity: 0;
+       width: 100%;
+       transition: 0.5s ease;
+   }
+
+   .nav-content-container {
+       flex-direction: column;
+       align-items: flex-start;
+   }
+
+   .nav-link-container ul {
+       flex-direction: column;
+       width: 100%;
+   }
+
+   .nav-link-container li {
+       text-align: center;
+       padding-bottom: 5px;
+   }
+
+   a:link {
+       padding: 0;
+   }
+
+   .nav-link-container.active {
+       display: flex;
+       opacity: 1;
+       
+   }
 }
 
 /*About*/
@@ -352,6 +408,12 @@ a:active {
     margin: 0;
 }
 
+.portfolio-mobile-click {
+    color: var(--grey);
+    margin-bottom: -25px;
+    display: none;
+}
+
 .portfolio-projects-container {
     width: 100%;
     margin-top: 30px;
@@ -387,22 +449,15 @@ a:active {
     align-items: center;
 }
 
-@media screen and (max-width: 700px) {
-    .project-container {
-        width: 100%;
-    }
-}
-
 .project-image-container:hover .project-details-container {
     opacity: 1;
 }
 
 .project-details-content {
     width: 75%;
-    height: 70%;
+    height: 80%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .project-title-container {
@@ -422,7 +477,6 @@ a:active {
     color: var(--pink);
     font-size:   28px;
     margin-block: 0;
-    padding: 10px;
 }
 
 
@@ -430,14 +484,122 @@ a:active {
 .project-desc {
     text-align: center;
     color: var(--grey);
-    font-size: 18px;
-    line-height: 28px;
-    padding: 10px 10px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .project-button-container {
     text-align: center;
 }
+
+@media screen and (max-width: 1056px) {
+    .project-details-content {
+        width: 90%;
+    }
+
+    .project-desc {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 895px) {
+    .project-container {
+        width: 100%;
+    }
+
+    .project-details-content {
+        width: 75%;
+    }
+
+    .project-desc {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 537px) {
+    .project-details-content {
+        width: 90%;
+    }
+
+    .project-desc {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 442px) {
+    .project-title {
+        font-size: 24px;
+        padding: 0;
+    }
+    
+    .project-subtitle {
+        font-size:   20px;
+
+    }
+
+    .project-desc {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .portfolio-mobile-click {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 388px) {
+    .project-title {
+        font-size: 20px;
+        padding: 0;
+    }
+    
+    .project-subtitle {
+        font-size:   18px;
+
+    }
+
+    .project-desc {
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 3px;
+    }
+
+    .project-button-container button {
+        padding: 8px;
+        width: 70px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 327px) {
+    .project-title {
+        font-size: 17px;
+        padding: 0;
+    }
+    
+    .project-subtitle {
+        font-size:   15px;
+        margin-bottom: -7px;
+
+    }
+
+    .project-desc {
+        font-size: 12px;
+        line-height: 13px;
+        margin-bottom: 3px;
+    }
+
+    .project-button-container button {
+        padding: 5px;
+        width: 60px;
+        font-size: 10px;
+    }
+
+}
+
 
 /*Skills*/
 .skills-container {

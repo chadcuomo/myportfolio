@@ -2,6 +2,12 @@ import React from 'react'
 import SmallLogo from './SmallLogo'
 
 class Nav extends React.Component {
+
+  toggleNav() {
+    const navlinks = document.querySelector('.nav-link-container')
+    navlinks.classList.toggle('active')
+  }
+
   render() {
     return (
       <nav className="navbar">
@@ -9,12 +15,26 @@ class Nav extends React.Component {
               <div className="nav-logo-container">
                 <SmallLogo />
               </div>
+              <button className="toggle-button" onClick={this.toggleNav}>
+              </button>
               <div className="nav-link-container">
-                  <a href=".home">Home</a>
-                  <a href=".home">About</a>
-                  <a href=".home">Portfolio</a>
-                  <a href=".home">Skills</a>
-                  <a href=".home">Contact</a>
+                <ul>
+                  <li>
+                    <a href=".home">Home</a>
+                  </li>
+                  <li>
+                    <a href=".home">About</a>
+                  </li>
+                  <li>
+                    <a href=".home">Portfolio</a>
+                  </li>
+                  <li>
+                    <a href=".home">Skills</a>
+                  </li>
+                  <li>
+                    <a href=".home">Contact</a>
+                  </li>
+                </ul>
               </div>
           </div>
       </nav>
