@@ -34,6 +34,9 @@ class Contact extends React.Component {
                 <button className="twitter-button" />
                 <button className="linkedin-button" />
               </div>
+              <div className="copyright-container">
+                <p className="copyright">Chad Cuomo <span className="pink">&#169; 2020</span></p>
+              </div>
             </div>
           </div>
       </section>
