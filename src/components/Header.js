@@ -2,11 +2,16 @@ import React from 'react'
 import LargeLogo from './LargeLogo'
 import SmallC from './SmallC'
 import Button from './Button'
+import ParticleComponent from "./ParticleComponent";
+import LargeLogoOutline from './LargeLogoOutline';
+import '../css/logoanimate.css';
 
 class Header extends React.Component {
+
   render() {
     return (
       <header className="header-container">
+        <ParticleComponent />
         <div className="header-content-container">
             <div className="header-left-content-container">
                 <div className="header-title"> 
@@ -27,6 +32,7 @@ class Header extends React.Component {
             </div>
             <div className="header-logo-container">
                 <LargeLogo />
+                <LargeLogoOutline />
             </div>
         </div>
       </header>
