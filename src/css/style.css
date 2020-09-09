@@ -137,17 +137,15 @@ button {
     top: -8px;
 }
 
-@media screen and (max-width: 785px) {
-
-    .header-left-content-container {
-        width: 100%;
-    }
-    .header-logo-container {
-        display: none;
-    }
+.blast {
+    display: inline-block;
 }
 
-@media screen and (max-width: 700px), (max-height: 419px)  {
+.developer {
+    display: inline;
+}
+
+@media screen and (max-width: 1385px) {
     .header-title {
         font-size: 40px;
         line-height: 60px;
@@ -160,7 +158,29 @@ button {
     }
 }
 
-@media screen and (max-width: 328px) {
+@media screen and (max-width: 1009px) {
+    .developer {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 785px) {
+
+    .header-left-content-container {
+        width: 100%;
+    }
+    .header-logo-container {
+        display: none;
+    }
+
+    .developer {
+        display: inline-block;
+    }
+}
+
+
+
+@media screen and (max-width: 345px) {
     .header-title {
         font-size: 32px;
         line-height: 50px;
@@ -172,7 +192,7 @@ button {
     }
 }
 
-@media screen and (max-height: 280px) {
+@media screen and (max-height: 280px), (max-width: 276px) {
     .header-title {
         font-size: 24px;
         line-height: 35px;
@@ -401,6 +421,8 @@ a:active {
         line-height: 28px;
     }
 }
+
+
 
 /*Portfolio*/
 .portfolio-container{
