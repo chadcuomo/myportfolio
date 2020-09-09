@@ -13,6 +13,7 @@
 body, html{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
 
 
@@ -333,11 +334,20 @@ button {
     border-bottom: var(--pink) 10px solid;
     font-size: 150px;
     line-height: 115px;
-    margin-inline: -90px;
+    margin-inline: 0px;
+    margin-block: 0;
+    margin: 0;
 }
 
 .about-container-title {
     color: var(--black);
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.about-container-title h2 {
     transform: rotate(-90deg);
 }
 
@@ -373,20 +383,21 @@ button {
     width: 80%;
 }
 
-@media screen and (max-width: 864px) {
+@media screen and (max-width: 944px) {
     .about-container-content {
         flex-wrap: wrap;
     }
 
     .about-container-title {
-        transform: rotate(0deg);
         width: 100%;
+        justify-content: flex-start;
     }
 
     .about-container-title h2 {
         margin-inline: 0;
         margin-block: 0;
         margin-bottom: 15px;
+        transform: rotate(0);
     }
 }
 
@@ -589,7 +600,7 @@ button {
     }
 }
 
-@media screen and (max-width: 388px) {
+@media screen and (max-width: 425px) {
     .project-title {
         font-size: 20px;
         padding: 0;
@@ -939,6 +950,9 @@ hr {
 .form-button {
     border: none;
     font-family: var(--pfont);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 @media screen and (max-width: 676px) {
