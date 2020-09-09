@@ -212,6 +212,7 @@ button {
 
 .navbar {
     position: sticky;
+    position: -webkit-sticky;
     background-color: var(--black);
     display: flex;
     justify-content: center;
