@@ -1,7 +1,6 @@
 import React from 'react'
 import LargeLogo from './LargeLogo'
 import SmallC from './SmallC'
-import Button from './Button'
 import ParticleComponent from "./ParticleComponent";
 import LargeLogoOutline from './LargeLogoOutline';
 import '../css/logoanimate.css';

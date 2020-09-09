@@ -3,6 +3,7 @@ const projects = {
       name: "League Universe",
       image: "/images/leagueuniverse.jpg",
       tools: "React",
+      website: `https://leagueuniverse.netlify.app/`,
       desc:
         `Using data pulled from Riot's League of Legends API, an App created to 
         display champions. Clicking on a champion will pull up a full champion card 
@@ -13,6 +14,7 @@ const projects = {
         name: "Ghost Store",
         image: "/images/ghoststore.jpg",
         tools: "React",
+        website: `https://ghoststore.netlify.app/`,
         desc:
           `An e-commerce store build with React. View products, with the ability to 
           display more information using modals. Add, edit, and delete products 
@@ -23,6 +25,7 @@ const projects = {
         name: "Weatherly",
         image: "/images/weatherapp.jpg",
         tools: "JavaScript",
+        website: `https://chadcuomo.github.io/weatherapp/`,
         desc:
             `Uses Weatherbit.io API to pull weather data. Also uses an API to loacate 
             the user's IP address to display the current weather and seven day forecast in their 
@@ -32,6 +35,7 @@ const projects = {
         name: "Todo App",
         image: "/images/todoapp.jpg",
         tools: "JavaScript",
+        website: `https://chadcuomo.github.io/todoapp/`,
         desc:
           `An app created to keep track of your personal Todo List. Has functionality to add 
           todos, mark todos that are finished, as well as delete todos. Todo list is persisted with 

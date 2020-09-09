@@ -26,7 +26,7 @@ class Contact extends React.Component {
      })
      gsap.from(".contact-left-form-container", {
       scrollTrigger: ".contact-left-form-container",
-      delay: 1,
+      delay: .5,
       opacity: 0,
       scale: .2,
       x: -50,
@@ -79,9 +79,9 @@ class Contact extends React.Component {
             </div>
             <div className="contact-bottom-container">
               <div className="social-button-container">
-                <button className="github-button social" />
-                <button className="twitter-button social" />
-                <button className="linkedin-button social" />
+                <a href='https://github.com/chadcuomo'><button className="github-button social" /></a>
+                <a href='https://twitter.com/chad_cuomo'><button className="twitter-button social" /></a>
+                <a href='https://www.linkedin.com/in/chadcuomo/'><button className="linkedin-button social" /></a>
               </div>
               <div className="copyright-container">
                 <p className="copyright">Chad Cuomo <span className="pink">&#169; 2020</span></p>

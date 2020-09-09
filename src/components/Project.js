@@ -28,7 +28,7 @@ class Project extends React.Component {
     }
 
   render() {
-      const { image, name, tools, desc } = this.props.details
+      const { image, name, tools, desc, website } = this.props.details
     return (
       <div className="project-container">
           <div className="project-image-container">
@@ -44,7 +44,7 @@ class Project extends React.Component {
                             <p className="project-desc">{desc}</p>
                         </div>
                         <div className="project-button-container">
-                            <Button buttonText={"Visit Site"} />
+                            <a href={website}><Button buttonText={"Visit Site"} /></a>
                         </div>
                     </div>
                 </div>
