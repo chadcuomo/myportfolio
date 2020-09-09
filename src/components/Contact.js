@@ -55,6 +55,7 @@ class Contact extends React.Component {
 
   render() {
     return (
+      <div>
       <section className="contact-container">
           <div className="content-container">
             <div className="contact-content-container">
@@ -89,6 +90,7 @@ class Contact extends React.Component {
             </div>
           </div>
       </section>
+      </div>
     )
   }
 }

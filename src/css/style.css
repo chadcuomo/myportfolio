@@ -209,14 +209,16 @@ button {
 
 
 /* Nav */
+
 .navbar {
+    position: sticky;
     background-color: var(--black);
     display: flex;
     justify-content: center;
-    position: sticky;
+    align-items: center;
     z-index: 1;
-    top: 0;
     width: 100%;
+    top: 0;
 }
 
 .nav-content-container {

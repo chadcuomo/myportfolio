@@ -32,6 +32,7 @@ class Portfolio extends React.Component {
     }
     render() {
         return (
+        <div>
         <section className="portfolio-container">
             <div className="content-container">
                 <div className="portfolio-title-container">
@@ -51,6 +52,7 @@ class Portfolio extends React.Component {
                 </div>
             </div>
         </section>
+        </div>
         )
     }
 }

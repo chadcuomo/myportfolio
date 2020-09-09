@@ -33,6 +33,7 @@ componentDidMount() {
 
   render() {
     return (
+      <div>
       <section className="skills-container">
           <div className="content-container">
             <div className="skills-title-container">
@@ -50,6 +51,7 @@ componentDidMount() {
             </div>
           </div>
       </section>
+      </div>
     )
   }
 }

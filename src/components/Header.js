@@ -43,6 +43,7 @@ class Header extends React.Component {
 
   render() {
     return (
+      <div>
       <header className="header-container">
         <ParticleComponent />
         <div className="header-content-container">
@@ -94,6 +95,7 @@ class Header extends React.Component {
             </div>
         </div>
       </header>
+      </div>
     )
   }
 }
