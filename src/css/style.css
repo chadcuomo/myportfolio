@@ -274,6 +274,10 @@ button {
        display: block;
    }
 
+   button {
+       width: 150px;
+   }
+
    .nav-link-container {
        display: none;
        opacity: 0;
