@@ -341,7 +341,6 @@ button {
 
 .about-container-title {
     color: var(--black);
-    border: 1px solid green;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -619,7 +618,6 @@ button {
 
     .project-button-container button {
         padding: 8px;
-        width: 70px;
         font-size: 12px;
     }
 }
@@ -644,7 +642,6 @@ button {
 
     .project-button-container button {
         padding: 5px;
-        width: 60px;
         font-size: 10px;
     }
 
