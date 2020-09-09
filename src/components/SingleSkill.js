@@ -1,6 +1,31 @@
 import React from 'react'
+import gsap from 'gsap'
+import { ScrollTrigger, Power1 } from "gsap/all"
+gsap.registerPlugin(ScrollTrigger)
 
 class SingleSkill extends React.Component {
+
+  scrollSkill = () => {
+    gsap.fromTo(".single-skill-container", {
+      
+      y: 50,
+      opacity: 0
+     },
+     {
+      scrollTrigger: ".single-skill-container",
+       y: 0,
+       opacity: 1,
+       duration: .5,
+       delay: 1,
+       stagger: .1,
+       ease: Power1.easeOut,
+     })
+    }
+
+    componentDidMount() {
+      this.scrollSkill()
+    }
+
   render() {
     const { name, image, imageName } = this.props.details
     return (

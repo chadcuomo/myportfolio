@@ -212,6 +212,10 @@ button {
     background-color: var(--black);
     display: flex;
     justify-content: center;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    width: 100%;
 }
 
 .nav-content-container {
@@ -223,6 +227,7 @@ button {
 
 .nav-logo-container {
     margin-bottom: -2px;
+    cursor: pointer;
 }
 
 .nav-link-container ul {
@@ -235,28 +240,18 @@ button {
     list-style: none;
 }
 
-a:link {
-    text-decoration: none;
+.nav-link {
     color: var(--white);
     font-family: var(--pfont);
+    font-size: 14px;
     padding-left: 30px;
+    background-color: #0000;
 }
-  
-a:visited {
-    text-decoration: none;
-    color: var(--white);
+
+.nav-link:hover {
+    color: #f62356;
 }
-  
-a:hover {
-    text-decoration: none;
-    color: var(--pink);
-    transition-duration: 0.35s;
-}
-  
-a:active {
-    text-decoration: none;
-    color: var(--white);
-}
+
 
 .toggle-button {
    display: none;

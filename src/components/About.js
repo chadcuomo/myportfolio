@@ -1,7 +1,49 @@
 import React from 'react'
 import LargeTitle from './LargeTitle'
+import gsap from 'gsap'
+import { ScrollTrigger, Power1 } from "gsap/all";
+gsap.registerPlugin(ScrollTrigger);
 
 class About extends React.Component {
+
+  scrollAbout = () => {
+    gsap.from(".about-container-title", {
+      scrollTrigger: ".about-container-title",
+      opacity: 0,
+      x: -150,
+      duration: 1,
+      ease: Power1.easeOut
+     })
+     gsap.from(".about-inner-content-title", {
+      scrollTrigger: ".about-inner-content-title",
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      ease: Power1.easeOut,
+      delay: .25
+     })
+     gsap.from(".about-inner-content-text", {
+      scrollTrigger: ".about-inner-content-text",
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      delay: .25,
+      ease: Power1.easeOut
+     })
+     gsap.from(".about-img", {
+      scrollTrigger: ".about-img",
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      ease: Power1.easeOut,
+      delay: .5
+     })
+    }
+
+    componentDidMount() {
+      this.scrollAbout()
+    }
+
   render() {
     return (
       <section className="about-container">

@@ -11,15 +11,15 @@ import { Bounce } from "gsap/all";
 class Header extends React.Component {
   
   staggerHeader = () => {
-    gsap.from("span", {
+    gsap.from(".blast", {
       delay: 0.65,
       opacity: 0,
       scale: 0.5,
+      y: -20,
       duration: 0.15,
       rotate: '-15deg',
       stagger: 0.08,
-       //space each element's animation out by 0.5 seconds
-       ease: Bounce.easeOut,
+      ease: Bounce.easeOut,
     })
     gsap.from(".header-text", {
       delay: 0.75,
@@ -35,6 +35,11 @@ class Header extends React.Component {
 
   componentDidMount() {
     this.staggerHeader()
+  }
+
+  scrollToAbout = () => {
+    const about = document.querySelector('.about-container');
+    about.scrollIntoView({behavior: "smooth"})
   }
 
   render() {
@@ -81,7 +86,7 @@ class Header extends React.Component {
                     <p>Front-End Developer / UI Enthusiast / Freelancer</p>
                 </div>
                 <div className="header-button">
-                    <Button buttonText={"View My Work"} />
+                    <button className="main-button" onClick={this.scrollToAbout}>View My Work</button>
                 </div>
             </div>
             <div className="header-logo-container">

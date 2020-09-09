@@ -2,6 +2,9 @@ import React from 'react'
 import LargeTitle from './LargeTitle'
 import Project from './Project'
 import projects from '../projects'
+import gsap from 'gsap'
+import { ScrollTrigger, Power1 } from "gsap/all"
+gsap.registerPlugin(ScrollTrigger)
 
 class Portfolio extends React.Component {
     state = {
@@ -12,8 +15,20 @@ class Portfolio extends React.Component {
         this.setState({ myProjects: projects })
     }
 
+    scrollPortfolio = () => {
+        gsap.from(".portfolio-title-container", {
+          scrollTrigger: ".portfolio-title-container",
+          opacity: 0,
+          x: -150,
+          duration: 1,
+          ease: Power1.easeOut,
+          delay: 0.25
+         })
+        }
+
     componentDidMount() {
         this.loadProjects()
+        this.scrollPortfolio()
     }
     render() {
         return (
