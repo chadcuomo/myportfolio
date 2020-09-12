@@ -16,6 +16,10 @@ body, html{
     width: 100vw;
   }
 
+body {
+    overflow-x: hidden;
+}
+
 
 * {
     box-sizing: border-box;
