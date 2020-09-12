@@ -670,6 +670,7 @@ button {
     padding-top: 40px;
     padding-bottom: 40px;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 .skills-title-container {
@@ -750,6 +751,7 @@ hr {
     padding-top: 60px;
     padding-bottom: 30px;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 
