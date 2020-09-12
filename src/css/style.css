@@ -13,7 +13,6 @@
 body, html{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
   }
 
 
@@ -79,6 +78,7 @@ button {
 .header-title {
     font-size: 55px;
     line-height: 80px;
+    color: var(--black);
 }
 
 .smallc {

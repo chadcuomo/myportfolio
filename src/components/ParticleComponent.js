@@ -50,7 +50,7 @@ class ParticleComponent extends React.Component {
               color: "#ffffff",
               distance: 600,
               enable: false,
-              opacity: 0.5,
+              opacity: 0.75,
               width: 2,
             },
             collisions: {
@@ -69,7 +69,7 @@ class ParticleComponent extends React.Component {
                 enable: false,
                 value_area: 1894.0440207397826,
               },
-              value: 20,
+              value: 15,
             },
             opacity: {
               value: 0.3,
