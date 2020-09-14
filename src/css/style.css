@@ -614,7 +614,7 @@ button {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
     .project-title {
         font-size: 20px;
         padding: 0;
@@ -623,6 +623,10 @@ button {
     .project-subtitle {
         font-size:   18px;
 
+    }
+
+    .project-content-container {
+        margin-top: -20px;
     }
 
     .project-desc {
