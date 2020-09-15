@@ -85,7 +85,7 @@ class Header extends React.Component {
                     <p>Front-End Developer / UI Enthusiast / Freelancer</p>
                 </div>
                 <div className="header-button">
-                    <button className="main-button" onClick={this.scrollToAbout}>View My Work</button>
+                    <button className="main-button" onClick={this.scrollToAbout}>Learn More</button>
                 </div>
             </div>
             <div className="header-logo-container">
