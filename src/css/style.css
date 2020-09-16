@@ -327,8 +327,8 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     width: 100vw;
 }
 
@@ -449,8 +449,8 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     width: 100vw;
 }
 
@@ -671,8 +671,8 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     width: 100vw;
     overflow-x: hidden;
 }
