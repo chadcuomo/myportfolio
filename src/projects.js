@@ -27,7 +27,7 @@ const projects = {
         tools: "JavaScript",
         website: `https://chadcuomo.github.io/weatherapp/`,
         desc:
-            `Uses Weatherbit.io API to pull weather data. Also uses an API to loacate 
+            `Uses Weatherbit.io API to pull weather data. Also uses an API to locate 
             the user's IP address to display the current weather and seven day forecast in their 
             current location. Also has the functionality to change locations based on user input`,
     },
