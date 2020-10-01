@@ -18,7 +18,7 @@ class Project extends React.Component {
        opacity: 1,
        duration: 1,
        delay: .5,
-       stagger: .2,
+       stagger: .3,
        ease: Power1.easeOut,
      })
     }
@@ -28,11 +28,39 @@ class Project extends React.Component {
     }
 
   render() {
-      const { image, name, tools, desc, website } = this.props.details
+      const { image, name, tools, desc, website, github } = this.props.details
     return (
       <div className="project-container">
-          <div className="project-image-container">
-            <img src={image} alt={name} className="project-image"/>
+        <div className="project-details-container">
+          <div className="project-details-content">
+            <div className="project-title-container">
+              <p className="project-title">{name}</p>
+              <p className="project-subtitle">{tools}</p>
+            </div>
+            <div className="project-content-container">
+              <div className="project-desc-container">
+                <p className="project-desc">{desc}</p>
+              </div>
+              <div className="project-button-container">
+                <a href={website}><Button buttonText={"Visit Site"} /></a>
+                <a href={github}><button className="main-button github">GitHub</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="project-image-container">
+        <a href={website}><img src={image} alt={name} className="project-image"/></a>
+        </div>
+         
+      </div>
+    )
+  }
+}
+
+export default Project
+
+/*
+<img src={image} alt={name} className="project-image"/>
             <div className="project-details-container">
                 <div className="project-details-content">
                     <div className="project-title-container">
@@ -51,10 +79,4 @@ class Project extends React.Component {
               
             </div>    
           </div>
-         
-      </div>
-    )
-  }
-}
-
-export default Project
+          */

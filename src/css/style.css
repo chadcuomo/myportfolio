@@ -416,7 +416,11 @@ button {
 
 @media screen and (max-width: 700px) {
     .about-img-container {
-        display: none;
+        width: 100%;
+    }
+
+    .about-img {
+        width: 50%;
     }
 
     .about-inner-content {
@@ -488,180 +492,151 @@ button {
 
 /*Project*/
 .project-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 2px;
+}
+
+.project-image-container {
     width: 50%;
-    position: relative;
+    padding: 25px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-image {
     width: 100%;
-    display: block;
 }
 
 .project-details-container {
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    background-color: var(--white);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transition: .75s ease;
+    width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.project-image-container:hover .project-details-container {
-    opacity: 1;
-}
-
 .project-details-content {
-    width: 75%;
-    height: 80%;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 40px;
 }
 
 .project-title-container {
-    text-align: center;
     width: 100%;
+    padding-top: 25px;
 }
 
 .project-title {
     color: var(--black);
-    font-size: 30px;
+    font-size: 34px;
     font-weight: 600;
     margin-block: 0;
-    padding: 5px;
+    padding-bottom: 10px;
 }
 
 .project-subtitle {
     color: var(--pink);
     font-size:   28px;
     margin-block: 0;
+    padding-bottom: 20px;
 }
 
 
 
 .project-desc {
-    text-align: center;
     color: var(--grey);
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
+    padding-bottom: 10px;
 }
 
 .project-button-container {
-    text-align: center;
+    padding-bottom: 25px;
 }
 
-@media screen and (max-width: 1056px) {
-    .project-details-content {
-        width: 90%;
-    }
+.github {
+    background-color: var(--black);
+    width: 100px;
+    margin-left: 15px;
+}
 
-    .project-desc {
-        font-size: 14px;
-        line-height: 18px;
-    }
+.github:hover {
+    color: var(--black);
 }
 
 @media screen and (max-width: 895px) {
-    .project-container {
-        width: 100%;
-    }
-
-    .project-details-content {
-        width: 75%;
-    }
-
     .project-desc {
         font-size: 16px;
         line-height: 24px;
     }
 }
 
-@media screen and (max-width: 537px) {
-    .project-details-content {
+@media screen and (max-width: 741px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-details-container {
         width: 90%;
+    }
+
+    .project-details-content {
+        padding-left: 0px;
+    }
+
+    .project-image-container {
+        width: 90%;
+        order: -1;
+        padding-right: 25px;
+    }
+
+    .project-title-container {
+        text-align: center;
+    }
+
+    .project-content-container {
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 442px) {
+
+    .project-image-container {
+        width: 100%;
+    }
+
+    .project-title {
+        font-size: 28px;
+    }
+    
+    .project-subtitle {
+        font-size:   24px;
+
     }
 
     .project-desc {
         font-size: 14px;
-        line-height: 18px;
-    }
-}
-
-@media screen and (max-width: 442px) {
-    .project-title {
-        font-size: 24px;
-        padding: 0;
-    }
-    
-    .project-subtitle {
-        font-size:   20px;
-
-    }
-
-    .project-desc {
-        font-size: 13px;
         line-height: 17px;
     }
 
-    .portfolio-mobile-click {
-        display: block;
-    }
+    
 }
 
-@media screen and (max-width: 450px) {
-    .project-title {
-        font-size: 20px;
-        padding: 0;
-    }
-    
-    .project-subtitle {
-        font-size:   18px;
 
+@media screen and (max-width: 328px) {
+    .github {
+        margin-top: 10px;
     }
-
-    .project-content-container {
-        margin-top: -20px;
-    }
-
-    .project-desc {
-        font-size: 12px;
-        line-height: 15px;
-        margin-bottom: 3px;
-    }
-
-    .project-button-container button {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 327px) {
-    .project-title {
-        font-size: 17px;
-        padding: 0;
-    }
-    
-    .project-subtitle {
-        font-size:   15px;
-        margin-bottom: -7px;
-
-    }
-
-    .project-desc {
-        font-size: 12px;
-        line-height: 13px;
-        margin-bottom: 3px;
-    }
-
-    .project-button-container button {
-        font-size: 10px;
-    }
-
 }
 
 

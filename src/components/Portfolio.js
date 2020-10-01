@@ -37,9 +37,6 @@ class Portfolio extends React.Component {
                 <div className="portfolio-title-container">
                     <LargeTitle titleText="Portfolio" />
                 </div>
-                <div className="portfolio-mobile-click">
-                    <p>Click to learn more <span className="pink">&#8595;</span></p>
-                </div>
                 <div className="portfolio-projects-container">
                 {Object.keys(this.state.myProjects).map(key =>
                     <Project
