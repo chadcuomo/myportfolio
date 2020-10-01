@@ -601,6 +601,15 @@ button {
 
     .project-title-container {
         text-align: center;
+        padding: 0px;
+    }
+
+    .project-title {
+        padding-bottom: 5px;
+    }
+
+    .project-subtitle {
+        padding-bottom: 5px;
     }
 
     .project-content-container {
