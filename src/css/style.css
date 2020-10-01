@@ -605,11 +605,11 @@ button {
     }
 
     .project-title {
-        padding-bottom: -5px;
+        margin-bottom: -5px;
     }
 
     .project-subtitle {
-        padding-bottom: -5px;
+        margin-bottom: -5px;
     }
 
     .project-content-container {
